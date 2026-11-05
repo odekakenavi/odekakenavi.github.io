@@ -1,53 +1,78 @@
-# おでかけナビ robots.txt
-# GitHub Pages 公開版（https://odekakenavi.github.io/odekake-navi/）
-#
-# すべてのクローラーにサイト全体の巡回を許可します。
-# 検索エンジン・AI検索・AIアシスタントに紹介・引用してもらうため、主なボットは明示的に許可しています。
-# （特定のボットを拒否したい場合は、そのUser-agentの「Allow: /」を「Disallow: /」に変えてください）
+# おでかけナビ robots.txt（ルート用）
+# このファイルは https://odekakenavi.github.io/robots.txt として読まれます。
+# 本体サイトは https://odekakenavi.github.io/odekake-navi/ にあります。
 
 User-agent: *
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
 # --- 検索エンジン ---
 User-agent: Googlebot
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
 User-agent: Applebot
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
-# --- AI検索・AIアシスタント（ユーザーの質問への回答・引用のための巡回）---
+# --- AI検索・AIアシスタント ---
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
 User-agent: Claude-User
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
-# --- AIの学習・AI機能向けのクローラー ---
+# --- AIの学習・AI機能向け ---
 User-agent: GPTBot
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /creator.odekake-navi/
+Disallow: /odekakenavi-test/
 
 Sitemap: https://odekakenavi.github.io/odekake-navi/sitemap.xml
